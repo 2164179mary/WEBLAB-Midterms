@@ -4,16 +4,18 @@
         <title>Home: CashFe</title>
         <link rel="stylesheet" type="text/css" href="CSS/home.css">
     </head>
-    <body>
+    <header>
         <div id="top">
             <img src="" alt="CashFe Logo">
             <h1>CashFe</h1>
         </div>
+    </header>
+    <body>
         <div id="budget">
-            <h2>Your Budget: </h2>
-            <form>
-                <input type="text" placeholder="Enter your budget..." name="budget" required autofocus>
-                <input type="submit" value="Submit">
+            <h2>Budget</h2>
+            <form >
+                <input id = "budget-entry" type="text" placeholder= "Enter your budget..." name="budget" required autofocus>
+                <input id = "button-click" type="submit" value="OK">
             </form>
         </div>
         <div id="filter">
@@ -30,10 +32,12 @@
                     <input type="checkbox" name="category" value="rice">Rice Meal
                 </form>
             </div>
-            <div class="filter-class">
+            <div class="filter-class" id = "availability">
                 <h2>Wi-Fi Availability</h2>
-                <div><input type="radio" name="wifi" value="yes">Yes</div>
-                <div><input type="radio" name="wifi" value="no">No</div>
+                <form>
+                    <input type="radio" name="wifi" value="yes">Yes
+                    <input type="radio" name="wifi" value="no">No
+                </form>
             </div>
             <div class="filter-class">
                 <h2>Cafe Ambiance</h2>
