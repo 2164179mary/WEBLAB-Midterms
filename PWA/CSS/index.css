@@ -1,0 +1,17 @@
+@font-face{
+    font-family:Quesha;
+    src: url(/Fonts/Quesha.ttf);
+}
+
+div:first-of-type{
+    text-align: center;
+}
+div:first-of-type *{
+    display: inline-block;
+}
+div:nth-of-type(2) p{
+    text-align: center;
+}
+div:nth-of-type(3){
+    text-align: center;
+}
