@@ -19,11 +19,10 @@ div:nth-of-type(3){
 #button {
     border: none;
     color: #746D6E;
-    padding: 15px 20px;
 }
 div:first-of-type h1{
     font-family: Quesha;
-    font-size: 95px;
+    font-size: 100px;
     padding-top: 100px;
 }
 

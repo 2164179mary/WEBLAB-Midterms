@@ -1,3 +1,27 @@
-#budget *{
+@font-face{
+    font-family: Quesha;
+    src: url(Fonts/Quesha.ttf);
+}
+
+body{
+    width: 100%;
+    margin:0%;
+}
+#budget{
+    display: block;
+    text-align: center;
+}
+
+#top{
+    background-color:black;
+    color:white;
+    font-family: Quesha;
+    height: auto;
+}
+#top img, #top h1{
     display: inline-block;
+}
+#top h1{
+    font-size: 40px;
+    font-weight: bold;
 }
