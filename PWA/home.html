@@ -4,50 +4,56 @@
         <title>Home: CashFe</title>
         <link rel="stylesheet" type="text/css" href="CSS/home.css">
     </head>
-    <header>
+    <body>
         <div id="top">
-            <img src="" alt="CashFe Logo">
+            <a href = "index.html">            <img id = "logo" src="CSS/Logos/cashe-logo.png" alt="CashFe Logo" > </a>
             <h1>CashFe</h1>
         </div>
-    </header>
-    <body>
-        <div id="budget">
-            <h2>Budget</h2>
-            <form >
-                <input id = "budget-entry" type="text" placeholder= "Enter your budget..." name="budget" required autofocus>
-                <input id = "button-click" type="submit" value="OK">
-            </form>
-        </div>
-        <div id="filter">
-            <div class="filter-class">
-                <h2>Commodity Category</h2>
-                <form id="category" required>
-                    <input type="checkbox" name="category" value="rice">Cakes
-                    <input type="checkbox" name="category" value="cookies">Cookies
-                    <input type="checkbox" name="category" value="coffee">Coffee
-                    <input type="checkbox" name="category" value="frappe">Frappe
-                    <input type="checkbox" name="category" value="juice">Juice
-                    <input type="checkbox" name="category" value="milk">Milk Tea
-                    <input type="checkbox" name="category" value="pasta">Pasta
-                    <input type="checkbox" name="category" value="rice">Rice Meal
-                </form>
-            </div>
-            <div class="filter-class" id = "availability">
-                <h2>Wi-Fi Availability</h2>
+        <div>
+            <div id="budget">
+                <h2>Your Budget: </h2>
                 <form>
-                    <input type="radio" name="wifi" value="yes">Yes
-                    <input type="radio" name="wifi" value="no">No
+                    <input id="budget-value" type="text" placeholder="Enter your budget..." name="budget" required autofocus>
+                    <input id="sub" type="submit" value="Next">
                 </form>
             </div>
-            <div class="filter-class">
-                <h2>Cafe Ambiance</h2>
-                <input type="checkbox" name="ambiance" value="cozy">Cozy
-                <input type="checkbox" name="ambiance" value="quiet">Quiet
-                <input type="checkbox" name="ambiance" value="casual">Casual
+            <div id="filter-background">
+                <div id="filter">
+                    <div class="filter-class">
+                        <h2>Commodity Category</h2>
+                        <form class ="category">
+                            <input type="checkbox" name="category" value="rice">Cakes
+                            <input type="checkbox" name="category" value="cookies">Cookies
+                            <input type="checkbox" name="category" value="coffee">Coffee
+                            <input type="checkbox" name="category" value="frappe">Frappe
+                            <input type="checkbox" name="category" value="juice">Juice
+                            <input type="checkbox" name="category" value="milk">Milk Tea
+                            <input type="checkbox" name="category" value="pasta">Pasta
+                            <input type="checkbox" name="category" value="rice">Rice Meal
+                        </form>
+                    </div>
+                    <div class="filter-class">
+                        <h2>Wi-Fi Availability</h2>
+                        <form id = "radio-choice" >
+                           <div>
+                            <input type="radio" name="wifi" value="yes">Yes                 
+                            </div>
+                            <div>
+                            <input type="radio" name="wifi" value="no">No
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-class">
+                        <h2>Cafe Ambiance</h2>
+                        <div class = "category">
+                        <input type="checkbox" name="ambiance" value="cozy">Cozy
+                        <input type="checkbox" name="ambiance" value="quiet">Quiet
+                        <input type="checkbox" name="ambiance" value="casual">Casual
+                        </div>
+                    </div>  
+                </div>
             </div>
-        </div>
-        <div id="list">
-            
+        <script src="scripts/modal.js" async></script>
         </div>
     </body>
 </html>
