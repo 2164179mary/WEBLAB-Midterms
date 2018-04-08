@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home: CashFe</title>
+        <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    </head>
+    <body>
+        <div id="top">
+            <a href = "index.html">            <img id = "logo" src="CSS/Logos/cashe-logo.png" alt="CashFe Logo" > </a>
+            <h1>CashFe</h1>
+        </div>
+        <div>
+            <div id="budget">
+                <h2>Your Budget: </h2>
+                <form>
+                    <input id="budget-value" type="text" placeholder="Enter your budget..." name="budget" autofocus>
+                </form>
+                <button id="budget-button" type="button">Submit</button>
+            </div>
+            <div id="filter-background">
+                <div id="filter">
+                    <div class="filter-class">
+                        <h2>Commodity Category</h2>
+                        <form class ="category" required>
+                            <div><input type="checkbox" name="category" value="rice">Cakes</div>
+                            <div><input type="checkbox" name="category" value="cookies">Cookies</div>
+                            <div><input type="checkbox" name="category" value="coffee">Coffee</div>
+                            <div><input type="checkbox" name="category" value="frappe">Frappe</div>
+                            <div><input type="checkbox" name="category" value="juice">Juice</div>
+                            <div><input type="checkbox" name="category" value="milk">Milk Tea</div>
+                            <div><input type="checkbox" name="category" value="pasta">Pasta</div>
+                            <div><input type="checkbox" name="category" value="rice">Rice Meal</div>
+                        </form>
+                    </div>
+                    <div class="filter-class">
+                        <h2>Wi-Fi Availability</h2>
+                        <form id = "radio-choice" >
+                           <div>
+                            <input type="radio" name="wifi" value="yes">Yes                 
+                            </div>
+                            <div>
+                            <input type="radio" name="wifi" value="no">No
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="filter-class">
+                        <h2>Cafe Ambiance</h2>
+                        <div class = "category">
+                        <input type="checkbox" name="ambiance" value="cozy">Cozy
+                        <input type="checkbox" name="ambiance" value="quiet">Quiet
+                        <input type="checkbox" name="ambiance" value="casual">Casual
+                        </div>
+                    </div> 
+                    <button id="filter-submit" class="filter-buttons" type="button">Submit</button>
+                    <button id="filter-cancel"class="filter-buttons" type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="Javascript/app.js" async></script>
+</html>
