@@ -191,34 +191,42 @@ var printCafe = function(){
                         var print = cursor.value.cafeName;
                         var location = cursor.value.cafeLocation;
                         var id = cursor.value.id;
+                        var ids = "a"+id+"b";
                         var prints = print+"a";
+                        var div = document.createElement('div');
+                        div.setAttribute('id', ids);
                         var a = document.createElement('button');
                         //a.setAttribute('href', "");
                         a.setAttribute('id', id);
-                        a.setAttribute('onclick', "printMenu(this.id)");
+                        a.setAttribute('onclick', "callPrintMenu(this.id)");
                         a.setAttribute('value', print);
                         a.innerHTML = print+"\t\t Location: "+location;
                         var li = document.createElement('li');
                         var element = document.getElementById("cafeResults");
                         element.appendChild(li);
                         li.appendChild(a);
+                        li.appendChild(div);
                   }else {
                   for(var i = 0; i < ambience.length; i++) {
                       if(cursor.value.ambience == ambience[i]){
                         var print = cursor.value.cafeName;
                         var location = cursor.value.cafeLocation;
                         var id = cursor.value.id;
+                        var ids = "a"+id+"b";
                         var prints = print+"a";
+                        var div = document.createElement('div');
+                        div.setAttribute('id', ids);
                         var a = document.createElement('button');
                         //a.setAttribute('href', "");
                         a.setAttribute('id', id);
-                        a.setAttribute('onclick', "printMenu(this.id)");
+                        a.setAttribute('onclick', "callPrintMenu(this.id)");
                         a.setAttribute('value', print);
                         a.innerHTML = print+"\t\t Location: "+location;
                         var li = document.createElement('li');
                         var element = document.getElementById("cafeResults");
                         element.appendChild(li);
                         li.appendChild(a);
+                        li.appendChild(div);
                     }
                   }
               }
@@ -230,6 +238,7 @@ var printCafe = function(){
 }
 
 var printMenu = function(id){
+    var ids ="a"+id+"b";
     var objectStore = db.transaction("menu").objectStore("menu");
   
         objectStore.openCursor().onsuccess = function(event) {
@@ -238,12 +247,12 @@ var printMenu = function(id){
               if(cursor.value.price <= budget){
                   if(categories.length == 0){
                       if(cursor.value.cafeId == id){
-                        var print = cursor.value.menuName;
-                             var price = cursor.value.price;
+                            var print = cursor.value.menuName;
+                            var price = cursor.value.price;
                             var p = document.createElement('p');
                             p.setAttribute('href', "");
                             p.innerHTML = print +"\t\tPrice: "+ price;
-                            var element = document.getElementById(id);
+                            var element = document.getElementById(ids);
                             element.appendChild(p);
                       }
                   }else {
@@ -267,6 +276,22 @@ var printMenu = function(id){
             cursor.continue();
           }
         }; 
+}
+
+
+var callPrintCafe = function(){
+    if(cafeResults.hasChildNodes()){
+        return;
+    }else{
+        printCafe();
+    }
+}
+
+var callPrintMenu = function(id){ if(cafeResults.firstChild.firstChild.nextElementSibling.hasChildNodes()){
+        return;
+    }else{
+        printMenu(id);
+    }
 }
 
 var resetCafe = function(){

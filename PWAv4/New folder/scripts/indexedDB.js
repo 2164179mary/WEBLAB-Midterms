@@ -1,16 +1,3 @@
-//NOTES//
-
-/* TEST in console (CTRL +SHIFT J)
--enter all the details(filter) needed and click "NEXT" using the html file.
-- type "cafeList;" to return the list of cafe filtered
-- type "showMenu(idOfCafe);" to return the list of the menu filtered.
-*/
-
-/*
-NEXT GOAL:
-    implement the results in the html. (eg: auto creation of table, etc.)
-*/
-
 var categories = [];
 var budget;
 var availability;
@@ -127,54 +114,6 @@ request.onupgradeneeded = function(event) {
         }
 }
  
-/*function menuQuery() {
-    menuList = [];
-    var objectStore = db.transaction("menu").objectStore("menu");
-  
-        objectStore.openCursor().onsuccess = function(event) {
-          var cursor = event.target.result;
-          if (cursor) {
-              if(cursor.value.price <= budget){
-                  if(categories.length == 0){
-                        menuList.push(cursor.value);
-                  }else {
-                      for(var i = 0; i < categories.length; i++){
-                      
-                        if(categories[i] == cursor.value.menuType){
-                          menuList.push(cursor.value);
-                        } 
-                       }
-                       
-                  } 
-                  
-              }
-            cursor.continue();
-          }
-        };     
-}
-
-function cafeQuery(){
-    cafeList = [];
-    var objectStore = db.transaction("cafe").objectStore("cafe");
-        objectStore.openCursor().onsuccess = function(event) {
-          var cursor = event.target.result;
-          if (cursor) {
-              if(cursor.value.wifi == availability){
-                  if(ambience.length == 0){
-                        cafeList.push(cursor.value);
-                  }else {
-                  for(var i = 0; i < ambience.length; i++) {
-                      if(cursor.value.ambience == ambience[i]){
-                          cafeList.push(cursor.value);
-                  }
-                  }
-              }
-          }
-            cursor.continue();
-        }
-    };     
-}*/
-
 function compile(){
     menuQuery();
     cafeQuery();
