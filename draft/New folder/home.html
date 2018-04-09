@@ -52,11 +52,15 @@
                         <input type="checkbox" id="casual" onclick="getAmbience(this.id)">Casual
                         </div>
                     </div> 
-                    <button type="button" onclick="compile()">next</button>
+                    <button type="button" onclick="printCafe()">FILTER</button>
+                    <button type="button" onclick="compile()">RESET</button>
+                    <ul>
+                        <div id="cafeResults">
+                        </div>
+                    </ul>
+                    <ul id="menuResults">
+                    </ul>
                 </div>
-                <ul id="showCafe">
-                </ul>
-
             </div>
         <script src="scripts/indexedDB.js" async></script>
         </div>

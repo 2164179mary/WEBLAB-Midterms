@@ -189,24 +189,40 @@ var printCafe = function(){
               if(cursor.value.wifi == availability){
                   if(ambience.length == 0){
                         var print = cursor.value.cafeName;
-                        var a = document.createElement('a');
-                        a.setAttribute('href', "");
+                        var id = cursor.value.id;
+                        var prints = print+"a";
+                        var a = document.createElement('button');
+                        //a.setAttribute('href', "");
+                        a.setAttribute('id', id);
+                        a.setAttribute('onclick', "printMenu(this.id)");
+                        a.setAttribute('value', print);
                         a.innerHTML = print;
                         var li = document.createElement('li');
-                        var element = document.getElementById("menuResults");
+                        var div = document.createElement('div');
+                        div.setAttribute('id', prints);
+                        var element = document.getElementById("cafeResults");
                         element.appendChild(li);
-                        li.appendChild(a);
+                        li.appendChild(div);
+                        div.appendChild(a);
                   }else {
                   for(var i = 0; i < ambience.length; i++) {
                       if(cursor.value.ambience == ambience[i]){
                         var print = cursor.value.cafeName;
-                        var a = document.createElement('a');
-                        a.setAttribute('href', "");
+                        var id = cursor.value.id;
+                        var prints = print+"a";
+                        var a = document.createElement('button');
+                        //a.setAttribute('href', "");
+                        a.setAttribute('id', id);
+                        a.setAttribute('onclick', "printMenu(this.id)");
+                        a.setAttribute('value', print);
                         a.innerHTML = print;
                         var li = document.createElement('li');
-                        var element = document.getElementById("menuResults");
+                        var div = document.createElement('div');
+                        div.setAttribute('id', prints);
+                        var element = document.getElementById("cafeResults");
                         element.appendChild(li);
-                        li.appendChild(a);
+                        li.appendChild(div);
+                        div.appendChild(a);
                     }
                   }
               }
@@ -215,6 +231,44 @@ var printCafe = function(){
         }
     };     
     return;
+}
+
+var printMenu = function(id){
+    var objectStore = db.transaction("menu").objectStore("menu");
+  
+        objectStore.openCursor().onsuccess = function(event) {
+          var cursor = event.target.result;
+          if (cursor) {
+              if(cursor.value.price <= budget){
+                  if(categories.length == 0){
+                      if(cursor.value.cafeId == id){
+                        var print = cursor.value.menuName;
+                        var p = document.createElement('p');
+                        p.setAttribute('href', "");
+                        p.innerHTML = print;
+                        var element = document.getElementById(id);
+                        element.appendChild(p);
+                      }
+                  }else {
+                      for(var i = 0; i < categories.length; i++){
+                      
+                        if(categories[i] == cursor.value.menuType){
+                          if(cursor.value.cafeId == id){
+                             var print = cursor.value.menuName;
+                            var p = document.createElement('p');
+                            p.setAttribute('href', "");
+                            p.innerHTML = print;
+                            var element = document.getElementById(id);
+                            element.appendChild(p);
+                        }
+                        } 
+                       }
+                  } 
+                  
+              }
+            cursor.continue();
+          }
+        }; 
 }
 
 var resetCafe = function(){
@@ -228,7 +282,6 @@ var showCafe = function(){
   } 
     return listCafe;
 }
-
 
 var showMenu = function(id){
   var listMenu = [];
