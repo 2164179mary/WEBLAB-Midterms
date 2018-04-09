@@ -1,0 +1,17 @@
+1. Bag
+Color: Pink
+Found: 9th floor of DeVesse Building infront of Riso
+Time surrendered to SAO: 10:00
+Date: April 20, 2018
+
+2.Money
+//show only the icon of money, don't show the amount.
+Time Surrendered: 4:00
+Found: D902
+Date: May 2, 2018
+
+3. Umbrella
+Color: Blue
+Found:8th Floor Veranda
+Time: 2:00
+Date: May 3, 2018
