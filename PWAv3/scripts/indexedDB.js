@@ -2,7 +2,7 @@
 
 /* TEST in console (CTRL +SHIFT J)
 -enter all the details(filter) needed and click "NEXT" using the html file.
-- type "cafeList;" to return the list of cafe for the filter.
+- type "cafeList;" to return the list of cafe filtered
 - type "showMenu(idOfCafe);" to return the list of the menu filtered.
 */
 
@@ -18,7 +18,6 @@ var ambience = [];
 var modal = document.getElementById('filter-background');
 var menuList = [];
 var cafeList = [];
-var finalList = [];
 
 function getBudget(){
     budget = document.getElementById("budget-value").value;
@@ -79,16 +78,32 @@ const cafe = [
 
 const menu = [
     {id: 1, cafeId: 1, menuName: "Coffee", menuType: "coffee", price: 120},
-    {id: 2, cafeId: 2, menuName: "Fish", menuType: "rice", price: 220},
-    {id: 3, cafeId: 3, menuName: "milk Cake", menuType: "cakes", price: 320},
-    {id: 4, cafeId: 1, menuName: "Cabonara", menuType: "pasta", price: 120},
-    {id: 5, cafeId: 2, menuName: "Cappucino", menuType: "coffee", price: 120},
-    {id: 6, cafeId: 3, menuName: "Vanilla tea", menuType: "milk", price: 120},
+    {id: 2, cafeId: 1, menuName: "Strawberry Shortcake", menuType: "cakes", price: 536},
+    {id: 3, cafeId: 1, menuName: "Chocolate Cookies", menuType: "cookies", price: 154},
+    {id: 4, cafeId: 1, menuName: "Vanilla Frappe", menuType: "frappe", price: 120},
+    {id: 5, cafeId: 1, menuName: "Orange Juice", menuType: "juice", price: 50},
+    {id: 6, cafeId: 1, menuName: "Taro", menuType: "Milk tea", price: 300},
+    {id: 7, cafeId: 1, menuName: "Carbonara", menuType: "pasta", price: 400},
+    {id: 8, cafeId: 1, menuName: "Meat and Fist", menuType: "rice", price: 520},
+    {id: 9, cafeId: 2, menuName: "Fish", menuType: "rice", price: 220},
+    {id: 10, cafeId: 2, menuName: "Matcha Cake", menuType: "cakes", price: 600},
+    {id: 11, cafeId: 2, menuName: "Matcha Frappe", menuType: "frappe", price: 400},
+    {id: 12, cafeId: 2, menuName: "Matcha Juice", menuType: "juice", price: 50},
+    {id: 13, cafeId: 2, menuName: "Matcha Tea", menuType: "milk", price: 123},
+    {id: 14, cafeId: 2, menuName: "Matcha Pasta", menuType: "pasta", price: 430},
+    {id: 15, cafeId: 3, menuName: "milk Cake", menuType: "cakes", price: 320},
+    {id: 16, cafeId: 3, menuName: "milk Cookies", menuType: "cookies", price: 500},
+    {id: 17, cafeId: 1, menuName: "Sweet pasta", menuType: "pasta", price: 120},
+    {id: 18, cafeId: 2, menuName: "vanilla latte", menuType: "coffee", price: 120},
+    {id: 19, cafeId: 3, menuName: "Vanilla tea", menuType: "milk", price: 120},
+    {id: 20, cafeId: 3, menuName: "milk Frappe", menuType: "frappe", price: 320},
+    {id: 21, cafeId: 3, menuName: "milk juice", menuType: "juice", price: 786},
+    {id: 22, cafeId: 3, menuName: "Hotdog mean", menuType: "rice", price: 111},
 ]
  
  
 var db;
-var request = window.indexedDB.open("newDatabase10", 1);
+var request = window.indexedDB.open("newdbase", 2);
  
 request.onerror = function(event) {
   console.log("error: ");
@@ -120,12 +135,18 @@ function menuQuery() {
           var cursor = event.target.result;
           if (cursor) {
               if(cursor.value.price <= budget){
-                  for(var i = 0; i < categories.length; i++){
+                  if(categories.length == 0){
+                        menuList.push(cursor.value);
+                  }else {
+                      for(var i = 0; i < categories.length; i++){
                       
-                      if(categories[i] == cursor.value.menuType){
+                        if(categories[i] == cursor.value.menuType){
                           menuList.push(cursor.value);
-                      } 
-                  }
+                        } 
+                       }
+                       
+                  } 
+                  
               }
             cursor.continue();
           }
@@ -139,9 +160,13 @@ function cafeQuery(){
           var cursor = event.target.result;
           if (cursor) {
               if(cursor.value.wifi == availability){
+                  if(ambience.length == 0){
+                        cafeList.push(cursor.value);
+                  }else {
                   for(var i = 0; i < ambience.length; i++) {
                       if(cursor.value.ambience == ambience[i]){
                           cafeList.push(cursor.value);
+                  }
                   }
               }
           }
@@ -166,8 +191,10 @@ var showCafe = function(){
 
 var showMenu = function(id){
   var listMenu = [];
+    
+      
   for(var i = 0; i < menuList.length; i++){
-      if(menuList[i].id == id){
+      if(menuList[i].cafeId == id){
           listMenu.push(menuList[i].menuName +"\t\t"+ menuList[i].menuType + "\t\t"+ menuList[i].price);
       }
   } 
