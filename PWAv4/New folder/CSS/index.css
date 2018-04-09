@@ -10,13 +10,14 @@ div:first-of-type{
 }
 div:nth-of-type(1) p{
     margin-top: 0px;
-    text-align: center;
     font-size: 25px;
     font-family: Quesha;
-    margin-right: 400px;
+    margin-right: auto;
+	margin-left:auto;
 }
 div:nth-of-type(2){
-    margin-left: 750px;
+
+	text-align: center;
 }
 #button {
     border: none;
@@ -29,13 +30,15 @@ div:nth-of-type(2){
 div:first-of-type h1{
     font-family: Quesha;
     font-size: 80px;
-    margin-right: 350px;
-    margin-top: 150px;
+    margin-right: auto;
+    margin-top: auto;
+	
 }
 #home-logo {
-    margin-top: 150px;
+	margin-top: 50px;
+    width: auto;
     height: 250px;
-    float: left;
-    margin-left: 300px;
-    clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
 }
