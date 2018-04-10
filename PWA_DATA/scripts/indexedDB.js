@@ -120,7 +120,11 @@ const menu = [
   	{id: 54, cafeId: 2, menuName: "Vongole in Tomato", menuType: "pasta", price: 220},
   	{id: 55, cafeId: 2, menuName: "Pomodoro", menuType: "pasta", price: 180},
   	{id: 56, cafeId: 2, menuName: "Fusilli Chilli", menuType: "pasta", price: 240},
-	{id: 57, cafeId: 1, menuName: "Brown Cookies", menuType: "cookie", price: 100},
+	{id: 57, cafeId: 3, menuName: "Brown Cookies", menuType: "pasta", price: 100},
+	{id: 58, cafeId: 3, menuName: "Vanilla tea", menuType: "milk", price: 120},
+    {id: 59, cafeId: 3, menuName: "milk Frappe", menuType: "frappe", price: 320},
+    {id: 60, cafeId: 3, menuName: "milk juice", menuType: "juice", price: 786},
+    {id: 61, cafeId: 3, menuName: "Hotdog mean", menuType: "rice", price: 111},
 ]
  
  
@@ -342,14 +346,6 @@ var callPrintMenu = function(id, index){
 var resetCafe = function(){
    location.reload();
 
-}
-
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
-}else{
-    console.log("ERROR");
 }
 
 

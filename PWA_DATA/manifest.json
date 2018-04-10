@@ -1,0 +1,17 @@
+{
+    "background-color" : "white",
+    "description" : "This application lets you enter your budget and filter the results of oner or more cafe menu items that fit under your budget.",
+    "dir" : "ltr",
+    "display" : "standalone",
+    "icons" : [{
+                "src": "Logos/cafe.png",
+                "type": "image/png",
+                "sizes": "128x128"
+              }],
+    "name" : "CashFe",
+    "short_name" : "CashFe",
+    "orientation" : "any",
+    "scope" : "/PWA/website/",
+    "start_url" : "index.html",
+    "theme_color" : "white"
+}
