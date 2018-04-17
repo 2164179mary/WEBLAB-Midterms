@@ -49,10 +49,14 @@ var printCafe = function(){
        var address = document.createTextNode(data[i].cafeLocation);
        h2.appendChild(address);
        
+       var container = document.createElement('div');
+       container.setAttribute('class', "cafeContainer");
+       
        divForText.appendChild(h1);
        divForText.appendChild(h2);
-       div.appendChild(divForImage);
-       div.appendChild(divForText);
+       container.appendChild(divForImage);
+       container.appendChild(divForText);
+       div.appendChild(container);
        parent.appendChild(div);
    } 
 }
@@ -85,10 +89,14 @@ var printCafeWithIndex = function(index){
        var address = document.createTextNode(data[index].cafeLocation);
        h2.appendChild(address);
        
+       var container = document.createElement('div');
+       container.setAttribute('class', "cafeContainer");
+       
        divForText.appendChild(h1);
        divForText.appendChild(h2);
-       div.appendChild(divForImage);
-       div.appendChild(divForText);
+       container.appendChild(divForImage);
+       container.appendChild(divForText);
+       div.appendChild(container);
        parent.appendChild(div);
 
 }
