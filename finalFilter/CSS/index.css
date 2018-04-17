@@ -1,0 +1,19 @@
+#cafe img{
+    width: 300px;
+}
+
+#cafe div:hover{
+    background-color: aqua;
+}
+
+#cafe div{
+    padding: 10px;
+}
+
+#menuSearch{
+    display: none;
+}
+
+#category{
+    display: none;
+}

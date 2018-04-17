@@ -1,0 +1,512 @@
+[
+    {
+        "cafeID": 0,
+        "cafeName": "Arca's Yard",
+        "cafeLocation": "777 Tiptop, Ambuklao Rd, Baguio City",
+        "wifi": true,
+        "ambience": "cozy",
+        "menu": [
+            {
+                "menuName": "Benguet Coffee",
+                "type": "drinks",
+                "price": 45
+            },
+            {
+                "menuName": "Frothy Coffee",
+                "type": "drinks",
+                "price": 50
+            },
+            {
+                "menuName": "Tarragon Tea",
+                "type": "drinks",
+                "price": 50
+            },
+            {
+                "menuName": "Arca's Cloud Tea",
+                "type": "drinks",
+                "price": 60
+            },
+            {
+                "menuName": "Cacao Hot Choco",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "Bottled Water",
+                "type": "drinks",
+                "price": 25
+            },
+            {
+                "menuName": "Cucumber Smoothie",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "Pine Applie Smoothie",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "Banana Smoothie",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "Arca's Sweet Potato Ala Mode",
+                "type": "breakfast",
+                "price": 95
+            },
+            {
+                "menuName": "Bread with Special Dip",
+                "type": "breakfast",
+                "price": 75
+            },
+            {
+                "menuName": "French Toast",
+                "type": "breakfast",
+                "price": 85
+            },
+            {
+                "menuName": "Carrot Pie Ala Mode",
+                "type": "desserts",
+                "price": 95
+            },
+            {
+                "menuName": "Rhubard Pie",
+                "type": "desserts",
+                "price": 95
+            },
+            {
+                "menuName": "Yogurt with Wild Honey",
+                "type": "desserts",
+                "price": 85
+            }
+        ]
+    },
+    {
+        "cafeID": 1,
+        "cafeName": "Beans Talk",
+        "cafeLocation": "MPB Bldg 45 Session Rd, Baguio City",
+        "wifi": false,
+        "ambience": "casual",
+        "menu": [
+            {
+                "menuName": "Longganisa",
+                "type": "breakfast",
+                "price": 150
+            },
+            {
+                "menuName": "Tocino",
+                "type": "breakfast",
+                "price": 150
+            },
+            {
+                "menuName": "Corned Beef",
+                "type": "breakfast",
+                "price": 150
+            },
+            {
+                "menuName": "Bangus",
+                "type": "rice",
+                "price": 150
+            },
+            {
+                "menuName": "Continental",
+                "type": "breakfast",
+                "price": 150
+            },
+            {
+                "menuName": "French Toast",
+                "type": "desserts",
+                "price": 150
+            },
+            {
+                "menuName": "Beef Tapa",
+                "type": "rice",
+                "price": 150
+            },
+            {
+                "menuName": "Peaches and Cream",
+                "type": "desserts",
+                "price": 160
+            },
+            {
+                "menuName": "Buffalo Wings",
+                "type": "appetizers",
+                "price": 150
+            },
+            {
+                "menuName": "Chicken Nuggets",
+                "type": "appetizers",
+                "price": 140
+            },
+            {
+                "menuName": "Chili Cheese Fries",
+                "type": "appetizers",
+                "price": 140
+            },
+            {
+                "menuName": "Dynamite",
+                "type": "appetizers",
+                "price": 175
+            },
+            {
+                "menuName": "Lasagna",
+                "type": "pasta",
+                "price": 175
+            },
+            {
+                "menuName": "Baked Mac",
+                "type": "pasta",
+                "price": 150
+            },
+            {
+                "menuName": "Pork Binagoongan",
+                "type": "rice",
+                "price": 130
+            },
+            {
+                "menuName": "Lechon Kawali",
+                "type": "rice",
+                "price": 150
+            },
+            {
+                "menuName": "Adobo Flakes",
+                "type": "rice",
+                "price": 150
+            },
+            {
+                "menuName": "Creamy Tenderloin",
+                "type": "rice",
+                "price": 260
+            },
+            {
+                "menuName": "Americano",
+                "type": "drinks",
+                "price": 50
+            },
+            {
+                "menuName": "Brewed Coffee",
+                "type": "drinks",
+                "price": 50
+            },
+            {
+                "menuName": "Espresso",
+                "type": "drinks",
+                "price": 50
+            },
+            {
+                "menuName": "Cafe Latte",
+                "type": "drinks",
+                "price": 70
+            },
+            {
+                "menuName": "Cappuccino",
+                "type": "drinks",
+                "price": 70
+            },
+            {
+                "menuName": "Cafe Mocha",
+                "type": "drinks",
+                "price": 70
+            },
+            {
+                "menuName": "Hot Chocolate",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "Caramel Macchiato",
+                "type": "drinks",
+                "price": 95
+            },
+            {
+                "menuName": "Caramel Frappe",
+                "type": "drinks",
+                "price": 130
+            },
+            {
+                "menuName": "Red Iced Tea",
+                "type": "drinks",
+                "price": 70
+            }
+        ]
+    },
+    {
+        "cafeID": 2,
+        "cafeName": "Gossip Coffee Shop",
+        "cafeLocation": "76 Upper General Luna Road, Baguio City",
+        "wifi": true,
+        "ambience": "quiet",
+        "menu": [
+            {
+                "menuName": "Cecilia",
+                "type": "pasta",
+                "price": 150
+            },
+            {
+                "menuName": "Basilia",
+                "type": "pasta",
+                "price": 160
+            },
+            {
+                "menuName": "Cheesy Pesto",
+                "type": "pasta",
+                "price": 140
+            },
+            {
+                "menuName": "Smoked Cheesy Pesto",
+                "type": "pasta",
+                "price": 150
+            },
+            {
+                "menuName": "Gossip Clubhouse",
+                "type": "sandwiches",
+                "price": 115
+            },
+            {
+                "menuName": "Backstabber",
+                "type": "sandwiches",
+                "price": 130
+            },
+            {
+                "menuName": "Cheesehamosa",
+                "type": "sandwiches",
+                "price": 105
+            },
+            {
+                "menuName": "Tacolesa",
+                "type": "appetizers",
+                "price": 85
+            },
+            {
+                "menuName": "Nachosera",
+                "type": "appetizers",
+                "price": 85
+            },
+            {
+                "menuName": "Potato Fingers",
+                "type": "appetizers",
+                "price": 85
+            },
+            {
+                "menuName": "Espresso",
+                "type": "drinks",
+                "price": 150
+            },
+            {
+                "menuName": "Americano",
+                "type": "drinks",
+                "price": 60
+            },
+            {
+                "menuName": "Cafe Latte",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "White Mocha",
+                "type": "drinks",
+                "price": 95
+            },
+            {
+                "menuName": "Choco Hazelnut",
+                "type": "desserts",
+                "price": 115
+            },
+            {
+                "menuName": "Caramel Mocha",
+                "type": "desserts",
+                "price": 125
+            },
+            {
+                "menuName": "Italian Cheesecake",
+                "type": "desserts",
+                "price": 125
+            },
+            {
+                "menuName": "Green Tea",
+                "type": "drinks",
+                "price": 135
+            },
+            {
+                "menuName": "Lemonade",
+                "type": "drinks",
+                "price": 80
+            }
+        ]
+    },
+    {
+        "cafeID": 3,
+        "cafeName": "Cafe In The Sky",
+        "cafeLocation": "Mt Sto Tomas, Poblacion Kabuyao, Tubao, Baguio City",
+        "wifi": true,
+        "ambience": "casual",
+        "menu": [
+            {
+                "menuName": "Crispy Sky Rolls",
+                "type": "rice",
+                "price": 130
+            },
+            {
+                "menuName": "Fried Pork with Tofu",
+                "type": "rice",
+                "price": 130
+            },
+            {
+                "menuName": "French Fries",
+                "type": "appetizers",
+                "price": 110
+            },
+            {
+                "menuName": "Nachos with Cheese",
+                "type": "appetizers",
+                "price": 110
+            },
+            {
+                "menuName": "Nachos with Salsa",
+                "type": "appetizers",
+                "price": 110
+            },
+            {
+                "menuName": "Onion Rings",
+                "type": "appetizers",
+                "price": 120
+            },
+            {
+                "menuName": "Beef with Oyster Sauce",
+                "type": "rice",
+                "price": 160
+            },
+            {
+                "menuName": "Ice Cream in the Sky",
+                "type": "desserts",
+                "price": 120
+            },
+            {
+                "menuName": "Americano",
+                "type": "drinks",
+                "price": 75
+            },
+            {
+                "menuName": "Caramel Macchiato",
+                "type": "drinks",
+                "price": 110
+            },
+            {
+                "menuName": "Mixed Berry",
+                "type": "drinks",
+                "price": 140
+            },
+            {
+                "menuName": "Black Forest",
+                "type": "drinks",
+                "price": 150
+            }
+        ]
+    },
+    {
+        "cafeID": 4,
+        "cafeName": "Cafe Sabel",
+        "cafeLocation": "BenCab Museum, Baguio City",
+        "wifi": false,
+        "ambience": "quiet",
+        "menu": [
+            {
+                "menuName": "Camote Fries",
+                "type": "appetizers",
+                "price": 100
+            },
+            {
+                "menuName": "Organic Vegetable Lumpia",
+                "type": "appetizers",
+                "price": 120
+            },
+            {
+                "menuName": "Potato Fries",
+                "type": "appetizers",
+                "price": 100
+            },
+            {
+                "menuName": "Homemade Longganisa",
+                "type": "breakfast",
+                "price": 220
+            },
+            {
+                "menuName": "Taal Rice",
+                "type": "rice",
+                "price": 200
+            },
+            {
+                "menuName": "Cinnamon Pancake",
+                "type": "breakfast",
+                "price": 200
+            },
+            {
+                "menuName": "Omelete",
+                "type": "breakfast",
+                "price": 200
+            },
+            {
+                "menuName": "Cream of Mountain Rice",
+                "type": "rice",
+                "price": 250
+            },
+            {
+                "menuName": "Grilled Porkchop w/ Rosemary",
+                "type": "rice",
+                "price": 250
+            },
+            {
+                "menuName": "Adobo Rice",
+                "type": "rice",
+                "price": 220
+            },
+            {
+                "menuName": "Volcano Ice Cream",
+                "type": "desserts",
+                "price": 150
+            },
+            {
+                "menuName": "Suman w/ Latik",
+                "type": "desserts",
+                "price": 100
+            },
+            {
+                "menuName": "Turon ala mode",
+                "type": "desserts",
+                "price": 120
+            },
+            {
+                "menuName": "Blueberry cheesecake",
+                "type": "desserts",
+                "price": 120
+            },
+            {
+                "menuName": "Bencab's Brew",
+                "type": "drinks",
+                "price": 100
+            },
+            {
+                "menuName": "Espresso",
+                "type": "drinks",
+                "price": 80
+            },
+            {
+                "menuName": "Latte",
+                "type": "drinks",
+                "price": 100
+            },
+            {
+                "menuName": "Mocha",
+                "type": "drinks",
+                "price": 100
+            },
+            {
+                "menuName": "Pineapple Frappe",
+                "type": "drinks",
+                "price": 120
+            }
+        ]
+    }
+]
