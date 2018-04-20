@@ -1,0 +1,299 @@
+@font-face{
+    font-family: Quesha;
+    src: url("Fonts/Quesha.ttf");
+}
+body { 
+    margin: 0; 
+    padding-top: 3%;
+    background-color: whitesmoke;
+}
+.content{
+    margin: 5%;
+    height: 60%;
+}
+.pic img{
+    width: 250px;
+}
+
+.pic{
+    float: left;
+    padding-left: 15%;
+   
+}
+.text{
+    float: left;
+    padding-left: 5%;
+    
+}
+.cafeContainer{
+    overflow: auto;
+    background-color: white;
+    padding: 1%;
+    
+}
+.cafeContainer:hover{
+    background-color:#d4d7cd;
+}
+.text h1{
+    font-family: Quesha;
+    font-size: 2rem;
+    color: seagreen;
+}
+.text h2{
+    font-family: verdana;
+    font-size: 1rem;
+    color: grey;
+}
+#menuSearch{
+    display: none;
+}
+
+#category{
+    display: none;
+    
+}
+#navSearch{
+    background: #d4d7cd;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+#top_left{
+    float: left;
+    list-style: none;
+}
+#top_right{
+    margin: 1%;
+    padding-right: 3%;
+    float: right;
+    list-style: none;
+}
+#top_right1{
+    list-style: none;
+}  
+#categories {
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+#home-logo{
+    padding-left: 5%;
+    width: 35%;
+    height: 50%;
+}
+#search-cafe,#budget-value{
+    font-size: 16px;
+    padding: 13px 20px ;
+    border-radius: 15px;
+}
+#searchCafe-button, #budget-value1{
+    padding: 10px 15px;
+    font-family: verdana;
+    background-color: mediumseagreen;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#searchCafe-reset, #searchMenu-reset{
+    padding: 10px 15px;
+    font-family: verdana;
+    background-color: mediumseagreen;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#cafeSearch{
+    padding: 10px 50px;
+    float: none;
+    display: none;
+ 
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+#menu {
+    font-family: Quesha;
+    margin-top: 8%;
+}
+
+#menu div {
+    background-color: white; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+}
+.topnav{
+    float: right;
+    padding-right: 3%;
+}
+/*-------------------PHONE------------------*/
+@media only screen and (max-width:670px){
+    #navSearch{
+        background: #d4d7cd;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        display: inline-block;
+        padding: 5% 1%;
+    
+    }
+    #navSearch>li{
+        display: inline-block;
+        float: left;
+    }
+    #home-logo{
+        width: auto;
+        height: 55%;
+        padding: 0;
+        position: absolute;
+    
+    }
+    .content{
+        margin-top: 20%;
+    }
+    
+    #search-cafe, #budget-value{
+        padding: 2px 1px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #searchCafe-button, #searchCafe-reset, #searchMenu-reset, #budget-value1{
+        padding: 4px 3px;
+        font-family: verdana;
+        background-color: mediumseagreen;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        cursor: pointer;
+}
+    #top_right{
+    padding: 0;
+    padding-right: 2%;
+    float: right;
+    list-style: none;
+}
+    #top_left{
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    .topnav{
+        float: none;
+        float: right;
+        padding: 0;
+        padding-right: 2%;
+    }
+    #categories{
+        padding: 2px 0;
+    }
+    #budget-value{
+     height: 20px;
+     width: 65px;
+    }
+  
+}
+/*-------------------TABLET------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+      
+        #navSearch{
+        background: #d4d7cd;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        display: inline-block;
+        padding: 5% 1%;
+    
+    }
+    #navSearch>li{
+        display: inline-block;
+        float: left;
+    }
+    #home-logo{
+        width: auto;
+        height: 55%;
+        padding: 0;
+        position: absolute;
+    
+    }
+    .content{
+        margin-top: 15%;
+    }
+    
+    #search-cafe, #budget-value{
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    #searchCafe-button, #searchCafe-reset, #searchMenu-reset, #budget-value1{
+        padding: 10px 8px;
+        font-family: verdana;
+        background-color: mediumseagreen;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        cursor: pointer;
+}
+    #top_right{
+    padding: 0;
+    padding-right: 2%;
+    float: right;
+    list-style: none;
+}
+    #top_left{
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    .topnav{
+        float: none;
+        float: right;
+        padding: 0;
+        padding-right: 2%;
+    }
+    #categories{
+        padding: 8px 1px;
+        font-size: 15px;
+    }
+    #budget-value{
+        padding: 10px 8px;
+    }
+        
+}
